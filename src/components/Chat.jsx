@@ -21,7 +21,6 @@ function Chat() {
     useEffect(() => {
 
         const socket = io("https://chat-app-server-nm76.onrender.com");
-        // const socket = io("https://fitness-tracker-zpqs.onrender.com");
         setNewSocket(socket)
 
         socket.on("connect", () => {
